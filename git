@@ -1,7 +1,7 @@
 git init                             khởi tạo
-git remote add origin link          tạo liên kết giữa git cá nhân và git online
+git remote add origin link           tạo liên kết giữa git cá nhân và git online
  2 câu lệnh trên chỉ chạy 1 lần
 
-git add .
-git commit -m 'sửa lỗi'
-git push origin tên nhánh
+git add .                           đóng gói code
+git commit -m 'sửa lỗi'             so sánh với lịch sử gần nhất và lưu sự thay đổi vào lịch sử  
+git push origin tên nhánh           đẩy lịch sử lên git online
