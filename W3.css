@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.textWhite {
+    color: black !important;
+}
+
+
+.column {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    justify-content: center;
+}
+
+.columnFull {
+    width: 100%;
+}
+
+.columnHalf {
+    width: 40%;
+}
+
+.columnThird {
+    width: calc(100% /3);
+}
+
+.textCenter {
+    text-align: center !important;
+}
+
+.mt8 {
+    margin-top: 8px;
+    width: 100%;
+}
+
+.mt16 {
+    margin-top: 16px;
+    margin-right: 165px;
+}
+
+.pullRight {
+    float: right;
+}
+
+.button {
+    margin-top: 15px;
+    display: inline-block;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 11px 16px;
+    border:none;
+}
+
+
+.main {
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.header {
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+#menu {
+    display: inline-block;
+    padding: 0;
+}
+#menu,.submenu{
+    list-style-type: none;
+}
+
+#menu > li {
+    display: inline-block;
+}
+
+#menu li {
+    position: relative; 
+}
+
+#menu > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+
+#menu li a {
+    text-decoration: none;  
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#menu > li:hover > a {
+    background-color: white;
+    color: black;
+    display: block;
+}
+.submenu li:hover{
+    background-color: darkgray;
+    color: black;
+    display: block;
+}
+
+
+
+#menu .submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px black(0, 0, 0, 0.3);
+    min-width: 160px;
+    left: 0;
+    top: 100%;
+    padding: 0;
+}
+
+#menu li:hover .submenu {
+    display: block;
+}
+
+#menu .submenu a {
+    color: black;
+    line-height: 38px;
+    padding: 0 12px;
+}
+
+#menu .sortDown {
+    font-size: 16px;
+}
+
+
+.search {
+    float: right;
+    padding: 0 23px;  
+}
+.search i {
+    color: white;
+    padding: 12px 24px;
+}
+.search:hover {
+    background-color: red;
+    cursor: pointer;
+    height: 100%;
+}
+
+.mobile {
+    display: none;
+}
+
+
+.banner{
+    margin-top: 46px;
+    background-color: darkslategrey;
+}
+
+.carousel-inner .carousel-item {
+    position: relative;
+}
+
+.carousel-item .textSlider {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    margin-bottom: 48px;
+}
+
+.textSlider .textLocation {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.textSlider .textDescriptionslider {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#slider .sliderContainer {
+    position: absolute;
+    color: #fff;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+}
+#slider .sliderSlogan {
+    font-size: 24px;
+    font-weight: 500;
+}
+#slider .slidertext {
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+#content {
+    background-color: 	#333333;
+    color: white;
+}
+#content .info {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px 112px;
+    
+}
+
+#content .start {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+#content .slogan {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+    margin-top: 25px;
+}
+
+#content .text {
+    text-align: justify;
+    font-size: 15px;
+    margin-top: 25px;
+    line-height: 1.4;
+}
+
+
+
+#content .teamMember {
+    margin-top: 47px;
+}
+
+#content .teamName {
+    font-size: 15px;
+}
+
+#content .teamImage {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+
+.tourContainer {
+    background-color: darkgrey;
+}
+.textWhite {
+    color: white;
+}
+.info .ticket {
+    background-color: dimgray;
+    margin-top: 30px;
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.ticket li {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid white;
+    color: darkgray;  
+}
+
+
+.ticket .soldOut {
+    padding: 3px 7px;
+    background-color: lightcoral;
+    color: white;
+    margin-left: 15px;
+}
+
+.ticket .quantity {
+    float: right;
+    width: 24px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    line-height: 24px;
+    margin-top: -3px;
+    text-align: center;
+}
+
+
+
+.placeContainer {
+    margin-top: 32px;
+}
+
+.placeImage {
+    width: 100%;
+    display: block;
+}
+
+.placeImage:hover {
+    opacity: 0.6;
+}
+
+.textPlace {
+    background-color: #333333;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.textCountry {
+    font-weight: 600;
+}
+
+.textTime {
+    margin-top: 15px;
+    color: darkgray;
+}
+
+.textDescription {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+/*
+#contact {
+    margin-top: 47px;
+}
+
+#contact .contactInformation {
+    font-size: 17px;
+    line-height: 0.6;
+    padding-left: 40%;
+}
+
+#contact i[class*='fas'] {
+    width: 50px;
+    display: inline-block;
+}
+
+.contactForm  .formControl {
+    padding: 5px;
+    padding-right: 30px;
+    border: 1px solid white;
+    width: 70%;
+    background-color: darkgray;
+    
+}
+
+.contactForm {
+    font-size: 15px;
+   padding-bottom: 50px;
+}*/
+.contactHead {
+    text-align: center;
+}
+.contactContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px 64px;
+}
+.contactBlock {
+    display: flex;
+}
+.contactText,
+.contactInput {
+    width: 50%;
+    margin-bottom: 16px;
+}
+.contactText i {
+    width: 30px;
+}
+.contactInputNameEmail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.contactInputNameEmail input {
+    width: 48%;
+    padding: 8px;
+    border-radius: 0;
+    border: 1px solid white;
+}
+.contactInputMess input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 0;
+    border: 1px solid white;
+}
+.contactInput button {
+    padding: 8px 16px ;
+    background-color: black;
+    color:white;
+    border: none;
+    margin: 16px 0px;
+    float: right;
+}
+.contactInput button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+.mapSection img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    background-color: #333333;
+   
+}
+
+#footer .socialFooter {
+    font-size: 24px;
+}
+
+#footer .socialFooter a {
+    text-decoration: none;
+    color: darkgray;
+}
+
+#footer .socialFooter a:hover {
+    color: dimgrey;
+}
+
+#footer .copyRight {
+    font-size: 15px;
+    margin-top: 15px;
+    color: darkgray;
+}
+
+#footer .copyRight a {
+    color: darkgray;
+}
+#footer .copyRight a:hover {
+    color: dimgrey;
+}
+
+
+
+@media (max-width: 600px) {
+
+#menu .desktop {
+    display: none;
+}
+.mobile {
+    display: block;
+}
+.adesktop {
+    display: none;
+}
+
+
+
+
+.textSlider {
+    display: none;
+}
+
+.teamMember {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.ticket {
+    padding-left: 10px;
+}
+
+.ticket li {
+    padding: 5px 0px;  
+}
+
+.ticket .quantity {
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.placeContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.columnThird {
+    width: 100%;
+    margin-top: 16px;
+    
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contactBlock,
+.contactInputNameEmail {
+    flex-direction: column;
+}
+.contactText,
+.contactInput,
+.contactInputNameEmail input {
+    width: 100%;  
+}
+.contactInputNameEmail input {
+    border: solid black 1px;
+}
+.contactInputMess input {
+    border: solid black 1px;
+}
+
+
+
+
+}
